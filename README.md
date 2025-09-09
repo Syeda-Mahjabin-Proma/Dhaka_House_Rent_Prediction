@@ -1,4 +1,4 @@
-# Dhaka House Rent Prediction
+# Dhaka House Rent Prediction Model
 
 ## Overview
 
