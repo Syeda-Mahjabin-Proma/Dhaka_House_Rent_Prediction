@@ -1,26 +1,26 @@
-# Dhaka House Rent Prediction Model
+# 🏠 Dhaka House Rent Prediction Model
 
-## Overview
+## 📌 Overview
 
-This project predicts **house rents in Dhaka** based on features like location, area, number of bedrooms, and bathrooms.
+This project predicts **house rents in Dhaka** based on features like **location**, **area**, **number of bedrooms**, and **bathrooms**.
 It implements **Random Forest Regressor**, **XGBoost Regressor**, and **Linear Regression** to estimate rental prices. Among these models, **Random Forest** provided the best performance.
 
 ---
 
-## Dataset Description
+## 🗂️ Dataset Description
 
 The dataset `houserentdhaka.csv` contains **28,800 rows** and the following columns:
 
-| Column         | Type    | Description                          |
-| -------------- | ------- | ------------------------------------ |
-| **Unnamed: 0** | int64   | Index (removed during processing)    |
-| **Location**   | object  | Area/Neighborhood                    |
-| **Area**       | int64   | Area in square feet                  |
-| **Bed**        | int64   | Number of bedrooms                   |
-| **Bath**       | int64   | Number of bathrooms                  |
+| Column         | Type    | Description                               |
+| -------------- | ------- | ----------------------------------------- |
+| **Unnamed: 0** | int64   | Index (removed during processing)         |
+| **Location**   | object  | Area/Neighborhood                      |
+| **Area**       | int64   | Area in square feet                    |
+| **Bed**        | int64   | Number of bedrooms                    |
+| **Bath**       | int64   | Number of bathrooms                    |
 | **Price**      | float64 | Rent in Bangladeshi Taka (in Thousand) |
 
-### Data Cleaning Steps
+### 🧹 Data Cleaning Steps
 
 * Removed unnecessary columns (`Unnamed: 0`)
 * Cleaned `Area` by removing 'sqft' and commas → converted to `int`
@@ -29,12 +29,12 @@ The dataset `houserentdhaka.csv` contains **28,800 rows** and the following colu
 
 ---
 
-## Steps & Methods
+## ⚙️ Steps & Methods
 
 1. **Data Preprocessing**
 
    * Missing value inspection
-   * Categorical encoding
+   * Categorical encoding 
    * Conversion of strings to numeric for `Area` and `Price`
 
 2. **Exploratory Data Analysis (EDA)**
@@ -52,13 +52,13 @@ The dataset `houserentdhaka.csv` contains **28,800 rows** and the following colu
 
 4. **Model Evaluation**
 
-| Model             | RMSE | R² Score |
-| ----------------- | ------- | -------- |
-| Random Forest     | 8796.60 | 0.79 |
-| XGBoost           | 9433.56 | 0.76 |
-| Linear Regression | 13153.48 |0.54|
+| Model                | RMSE     | R² Score |
+| -------------------- | -------- | -------- |
+| Random Forest    | 8796.60  | 0.79     |
+| XGBoost        | 9433.56  | 0.76     |
+| Linear Regression | 13153.48 | 0.54     |
 
-> **Random Forest** provided the most accurate predictions among all models.
+> **Random Forest provided the most accurate predictions**
 
 5. **User Input Prediction**
 
@@ -79,7 +79,7 @@ The dataset `houserentdhaka.csv` contains **28,800 rows** and the following colu
 
 ---
 
-## How to Run
+## ▶️ How to Run
 
 1. Clone the repository:
 
@@ -100,11 +100,11 @@ pip install category_encoders
 python main.py
 ```
 
-4. Follow the prompts to input **Location, Area, Bed, Bath** for rent prediction.
+4. Follow the prompts to input **Location, Area, Bed, Bath** for rent prediction 
 
 ---
 
-## Future Improvements
+## 🌟 Future Improvements
 
 * Add more features like **floor number, furnishing status, or proximity to amenities**
 * Hyperparameter tuning for **Random Forest** and **XGBoost**
@@ -112,6 +112,7 @@ python main.py
 * Expand dataset to include more locations in Dhaka
 
 ---
-## License
 
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+## 📄 License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT)
